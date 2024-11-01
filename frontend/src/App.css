@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Nico Moji';
+    src: url('/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/NicoMoji-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+                }
+@font-face {
+    font-family: 'Heebo';
+    src: url('/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/Heebo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.frame {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 34px;
+    position: relative;
+    left: 374.8px;
+        top: 309.7px;
+}
+
+.frame .image {
+    height: 215px;
+    position: relative;
+    width: 212px;
+}
+
+.frame .div {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    width: 364px;
+}
+
+.frame .div-2 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+}
+
+.frame .div-3 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 11px;
+    position: relative;
+}
+
+.frame .text-wrapper {
+    color: #31302e;
+    font-family: "Nico Moji", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2.96px;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.frame .text-wrapper-2 {
+    color: #767575;
+    font-family: "Heebo", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.35px;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+}
+
+.frame .product-designer {
+    color: #31302e;
+    font-family: "Heebo", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: relative;
+    width: 364px;
+}
+
+.frame .div-4 {
+    align-items: center;
+    border: 1px solid;
+    border-color: #e6e7e9;
+    border-radius: 36px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 25px;
+    padding: 12px 32px;
+    position: relative;
+}
+
+.frame .text-wrapper-3 {
+    color: #31302e;
+    font-family: "Heebo", sans-serif;
+    font-size: 12.5px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+    
+}
+
+.frame .vector {
+    height: 14px;
+    margin-right: -1px;
+    position: relative;
+    width: 13px;
+}

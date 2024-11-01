@@ -1,0 +1,39 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #FDFDFD;
+
+  --body-text-font-family: "Heebo", Helvetica;
+  --body-text-font-size: 15px;
+  --body-text-font-style: normal;
+  --body-text-font-weight: 400;
+  --body-text-letter-spacing: 0px;
+  --body-text-line-height: normal;
+  --collection-1-black: rgba(49, 48, 46, 1);
+  --collection-1-secondary-text: rgba(115, 115, 115, 1);
+  --collection-1-standout-fill: rgba(249, 249, 249, 1);
+  --h2-text-font-family: "Heebo", Helvetica;
+  --h2-text-font-size: 15px;
+  --h2-text-font-style: normal;
+  --h2-text-font-weight: 400;
+  --h2-text-letter-spacing: 0px;
+  --h2-text-line-height: normal;
+  --orah-shadow: 8px 8px 0px 0px rgba(51, 51, 51, 1);
+  --subtitle-font-family: "Nico Moji", Helvetica;
+  --subtitle-font-size: 27px;
+  --subtitle-font-style: normal;
+  --subtitle-font-weight: 400;
+  --subtitle-letter-spacing: 2.16px;
+  --subtitle-line-height: normal;
+  --text-font-family: "Neutral Face", Helvetica;
+  --text-font-size: 12px;
+  --text-font-style: normal;
+  --text-font-weight: 400;
+  --text-letter-spacing: 0px;
+  --text-line-height: normal;
+}
+

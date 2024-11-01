@@ -1,0 +1,38 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EAECEE;
+    z-index: 1000;
+}
+
+.text-wrapper-3 {
+    text-decoration: none;
+    color: #31302e;
+    font-family: "Heebo", sans-serif;
+    font-size: 12.5px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+
+}
+.nav-links {
+    
+}
