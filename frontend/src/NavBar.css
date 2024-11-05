@@ -1,5 +1,9 @@
 /* Reset */
 
+body {
+    overscroll-behavior: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +13,7 @@
 /* Navbar Styles */
 .navbar {
     background-color: #fff;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     padding: 10px 20px;
@@ -18,6 +22,7 @@
     align-items: center;
     border-bottom: 1px solid #EAECEE;
     z-index: 1000;
+    
 }
 
 .text-wrapper-3 {
@@ -34,5 +39,10 @@
 
 }
 .nav-links {
-    
+    margin-right: 30px;
+    display: flex;
+    gap: 50px;
+}
+.vector {
+    margin-left: 20px;
 }

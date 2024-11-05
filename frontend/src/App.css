@@ -121,3 +121,22 @@
     position: relative;
     width: 13px;
 }
+
+
+
+
+
+/* Hero section */
+
+/* Cards section */
+.spacer {
+    height: 100vh;
+    /* Adjust the height as needed */
+}
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 94px;
+    padding: 4rem 0;
+}
+

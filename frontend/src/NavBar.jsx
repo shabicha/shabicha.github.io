@@ -1,14 +1,16 @@
 import './NavBar.css'
+import Logo from '/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/shabLogo.svg'
+
 const NavBar = () => {
   return (
       <nav className="navbar">
           {/* Logo */}
-          <a href="/" className="logo">UO</a>
+          <a href="/" className="vector"> <img src={Logo} alt="Vector" /> </a>
 
           {/* Navigation Links */}
           <div className="nav-links">
               <a href="scroll down" className='text-wrapper-3'>CASE STUDIES</a>
-              <a href="https://rose-ginnie-96.tiiny.site" target="_blank" rel="noopener noreferrer">RESUME</a>
+              <a href="https://rose-ginnie-96.tiiny.site" target="_blank" rel="noopener noreferrer" className='text-wrapper-3'>RESUME</a>
           </div>
       </nav>
   )

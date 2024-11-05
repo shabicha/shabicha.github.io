@@ -3,6 +3,9 @@ import Arrow from '/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/sr
 import Elevation from '/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/pheader.svg'
 import './App.css'
 import NavBar from "./NavBar";
+import Card from './Card';
+import orah1 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orah1.png";
+import orah2 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orah2.png";
 
 function App() {
 
@@ -10,6 +13,7 @@ function App() {
     <>
       < NavBar />
 
+      {/* Hero section */}
       <div className="frame">
         <img className="image" alt="Image" src={Elevation} />
         <div className="div">
@@ -28,6 +32,25 @@ function App() {
           </div>
       </div>
       </div>
+      <div className="spacer"></div>
+      {/* Navigation Links */}
+      <div className="cards-section">
+        <Card
+          image1={orah1}
+          image2={orah2}
+          title="orah"
+          role="UX Design"
+          description="Gamifying screen-time reduction."
+        />
+        <Card
+          image1={orah1}
+          image2={orah2}
+          title="brig.ai"
+          role="UX Design, Product Management"
+          description="Designing AI to protect women's health rights."
+        />
+      </div>
+      
     </>
   )
 }

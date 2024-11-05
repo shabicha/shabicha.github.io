@@ -1,0 +1,102 @@
+.group {
+    background-color: #eeeeee;
+    border: 1px solid;
+    border-color: #e6e8e9;
+    border-radius: 16px;
+    height: 499px;
+    position: relative;
+    width: 456px;
+}
+
+.group .image {
+    height: 306px;
+    left: 62px;
+    object-fit: cover;
+    position: absolute;
+    top: 46px;
+    width: 146px;
+}
+
+.group .img {
+    height: 308px;
+    left: 243px;
+    object-fit: cover;
+    position: absolute;
+    top: 144px;
+    width: 149px;
+}
+
+
+
+
+.full-card-struc{
+    display: flex;
+        /* Add this line */
+        flex-direction: column;
+        /* Optional: stack items vertically */
+        gap: 26px;
+}
+
+
+
+ .image {
+    height: 499px;
+    object-fit: cover;
+    position: relative;
+    width: 456px;
+}
+
+ .div {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    width: 306px;
+}
+
+ .div-2 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 7px;
+    position: relative;
+    width: 100%;
+}
+
+ .text-wrapper {
+    align-self: stretch;
+    color: #31302e;
+    font-family: "Nico Moji-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1.92px;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+}
+
+ .text-wrapper-2 {
+    align-self: stretch;
+    color: #767575;
+    font-family: "Heebo-Regular", Helvetica;
+    font-size: 13.5px;
+    font-weight: 400;
+    letter-spacing: 1.22px;
+    line-height: normal;
+    position: relative;
+}
+
+ .p {
+    align-self: stretch;
+    color: #31302e;
+    font-family: "Heebo-Regular", Helvetica;
+    font-size: 13.5px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+}
