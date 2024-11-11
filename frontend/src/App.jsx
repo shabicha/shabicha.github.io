@@ -1,4 +1,5 @@
 
+import { useRef } from 'react';
 import Arrow from '/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/parrow.svg'
 import Elevation from '/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/pheader.svg'
 import './App.css'
@@ -8,7 +9,13 @@ import orah1 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/sr
 import orah2 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orah2.png";
 
 function App() {
+  // Step 1: Create the ref for the cards section
+  const cardsSectionRef = useRef(null);
 
+  // Function to scroll to the cards section
+  const scrollToCardsSection = () => {
+    cardsSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <>
       < NavBar />
@@ -26,7 +33,7 @@ function App() {
               Product designer and developer. Elevating the digital world with efficient systems and radial gradients.
             </p>
           </div>
-          <div className="div-4">
+          <div className="div-4" onClick={scrollToCardsSection} style={{ cursor: 'pointer' }}>
             <div className="text-wrapper-3">MY WORK</div>
             <img className="vector" alt="Vector" src={Arrow} />
           </div>
@@ -34,7 +41,7 @@ function App() {
       </div>
       <div className="spacer"></div>
       {/* Navigation Links */}
-      <div className="cards-section">
+      <div className="cards-section" ref={cardsSectionRef} >
         <Card
           image1={orah1}
           image2={orah2}

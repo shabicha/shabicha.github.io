@@ -92,14 +92,20 @@
 
 .frame .div-4 {
     align-items: center;
-    border: 1px solid;
-    border-color: #e6e7e9;
+    outline: 1px solid;
+    outline-color: #e6e7e9;
     border-radius: 36px;
     display: inline-flex;
     flex: 0 0 auto;
     gap: 25px;
     padding: 12px 32px;
     position: relative;
+    
+       
+}
+.frame .div-4:hover {
+    outline: 2px solid #31302E;
+    /* Changes outline color and thickness on hover */
 }
 
 .frame .text-wrapper-3 {
