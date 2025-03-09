@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
 import './Card.css';
+import { Link } from 'react-router-dom';
 
-function Card({ image1, image2, title, role, description }) {
+
+function Card({ image1, image2, title, role, description, projectId }) {
     return (
-        <> 
+        <>
+            <Link to={`/${projectId}`} style={{ textDecoration: 'none', color: 'inherit' }}>
            <div className='full-card-struc'> 
         <div className="group">
             <img className="image" alt="Image" src={image1} />
@@ -22,6 +25,7 @@ function Card({ image1, image2, title, role, description }) {
             
     
        
+        </Link>
         </>
     );
 }

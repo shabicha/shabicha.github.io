@@ -8,6 +8,7 @@ import Card from './Card';
 import orah1 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orah1.png";
 import orah2 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orah2.png";
 
+
 function App() {
   // Step 1: Create the ref for the cards section
   const cardsSectionRef = useRef(null);
@@ -17,8 +18,8 @@ function App() {
     cardsSectionRef.current.scrollIntoView({ behavior: 'smooth' });
   };
   return (
-    <>
-      < NavBar />
+  <>
+      < NavBar scrollToCardsSection={scrollToCardsSection} />
 
       {/* Hero section */}
       <div className="frame">
@@ -48,6 +49,7 @@ function App() {
           title="orah"
           role="UX Design"
           description="Gamifying screen-time reduction."
+          projectId="orah"
         />
         <Card
           image1={orah1}
@@ -55,10 +57,11 @@ function App() {
           title="brig.ai"
           role="UX Design, Product Management"
           description="Designing AI to protect women's health rights."
+          projectId="brigAI"
         />
       </div>
-      
     </>
+     
   )
 }
 
