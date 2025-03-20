@@ -44,6 +44,24 @@
 }
 
 
+.group .imageLaptop {
+    object-fit: cover;
+    position: absolute;
+    height: 176px;
+    left: 49px;
+    top: 65px;
+    width: 265px;
+}
+
+.group .imgLaptop {
+    object-fit: cover;
+    position: absolute;
+    height: 176px;
+    left: 147px;
+    top: 269px;
+    width: 265px;
+}
+
 
 
 .full-card-struc{

@@ -4,9 +4,12 @@ import Arrow from '/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/sr
 import Elevation from '/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/pheader.svg'
 import './App.css'
 import NavBar from "./NavBar";
-import Card from './Card';
-import orah1 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orah1.png";
+import Card from './CardMobileView';
+import Card2 from './CardLaptopView';
+import orah3 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orah3.png";
 import orah2 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orah2.png";
+import brig1 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/brig1.png";
+import brig2 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/brig2.png";
 
 
 function App() {
@@ -44,18 +47,18 @@ function App() {
       {/* Navigation Links */}
       <div className="cards-section" ref={cardsSectionRef} >
         <Card
-          image1={orah1}
+          image1={orah3}
           image2={orah2}
           title="orah"
-          role="UX Design"
+          role="Lead Product Designer"
           description="Gamifying screen-time reduction."
           projectId="orah"
         />
-        <Card
-          image1={orah1}
-          image2={orah2}
+        <Card2
+          image1={brig1}
+          image2={brig2}
           title="brig.ai"
-          role="UX Design, Product Management"
+          role="Machine Learning Engineer & Product Designer"
           description="Designing AI to protect women's health rights."
           projectId="brigAI"
         />
