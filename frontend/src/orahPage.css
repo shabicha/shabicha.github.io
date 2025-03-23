@@ -1,0 +1,225 @@
+
+
+.orah-container {
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 121px;
+    padding: 69px 0 0;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    
+    /* Centers the container horizontally */
+}
+
+/* Header */
+.orah-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+    justify-content: center;
+    width: 306px;
+}
+
+.orah-title {
+    font-family: "Nico Moji", Helvetica;
+    font-size: 27px;
+    font-weight: 400;
+    letter-spacing: 2.16px;
+    color: #31302e;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.orah-subtitle {
+    font-family: "Heebo-Light", Helvetica;
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+}
+.brig-subtitle {
+    font-family: "Heebo-Light", Helvetica;
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+        width: 150%;
+        /* Adjust width to give more space */
+}
+.brig-screens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center items vertically */
+    width: 100%;
+    min-height: 50vh;
+    /* Adjust height as needed */
+    position: relative;
+    flex-grow: 1;
+    gap: 78px;
+    margin: 0 auto;
+}
+
+.brig-screens .brigimg1,
+.brig-screens .brigimg2 {
+    height: 320px;
+    /* Keep consistent height */
+    width: 480px;
+    object-fit: cover;
+    /* Ensures proper scaling */
+    display: block;
+    /* Prevent inline spacing issues */
+}
+/* Screenshots Section */
+.orah-screens {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-items: flex-start;
+    min-height: 50vh; /* Ensures full viewport height */
+    position: relative;
+    flex-grow: 1; /* Ensures it fills space properly */
+    margin: 0 auto;
+   
+}
+
+.orah-images-wrapper {
+    position: relative;
+    display: flex;
+
+    width: 820px; /* Adjust as needed */
+    height: 121px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orah-image {
+    height: 327px;
+    width: 157px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.orah-image:nth-child(1) {
+    left: 0;
+    top: 0;
+}
+
+.orah-image:nth-child(2) {
+    left: 226px;
+    top: 101px;
+}
+
+.orah-image:nth-child(3) {
+    left: 453px;
+    top: 0;
+}
+
+.orah-image:nth-child(4) {
+    left: 674px;
+    top: 101px;
+}
+
+
+
+/* Summary Section */
+.orah-summary-container {
+    
+    max-width: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    padding: 75px 200px 75px 250px; /* Top Right Bottom Left */
+    gap: 160px;
+    
+    
+    height: 467px;
+    width: 100%;
+}
+
+.orah-summary {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 608px;
+}
+
+.summary-title {
+    color: #31302e;
+        font-family: "Heebo", sans-serif;
+        font-size: 12.5px;
+        font-weight: 400;
+        letter-spacing: 0.48px;
+        line-height: normal;
+        margin-top: -1px;
+        position: relative;
+        width: fit-content;
+}
+
+.summary-description {
+    font-size: 24px;
+    font-weight: 400;
+    color: #31302e;
+    letter-spacing: 1px;
+    font-family: "Nico Moji", Helvetica;
+}
+
+.summary-text {
+    font-size: 15px;
+    color: #19191b;
+    width: 580px;
+    font-family: "Heebo", sans-serif;
+}
+
+.summary-link {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* Role, Timeline, Team Section */
+.orah-details {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    width: 236px;
+}
+
+.orah-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail-title {
+    color: #31302e;
+        font-family: "Heebo", sans-serif;
+        font-size: 12.5px;
+        font-weight: 400;
+        letter-spacing: 0.48px;
+        line-height: normal;
+        margin-top: -1px;
+        position: relative;
+        width: fit-content;
+}
+
+.detail-text {
+    width: 80%;
+    font-size: 13px;
+    color: #19191b;
+    font-family: "Heebo",sans-serif;
+}
+
+.team-list {
+    font-size: 13px;
+    color: #19191b;
+    font-family: "Heebo-Regular", Helvetica;
+    width: 236px;
+}

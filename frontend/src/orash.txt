@@ -1,0 +1,339 @@
+import NavBar from "./NavBar";
+import orah3 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orah3.png";
+import orah2 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orah2.png";
+import './orahPage.css'
+
+function OrahPage() {
+    return (
+        <>
+            < NavBar />
+<div className="frame">
+            <div className="div">
+                <div className="div-2">
+                    <div className="text-wrapper">orah</div>
+
+                    <div className="text-wrapper-2">Gamifying screen-time reduction</div>
+                </div>
+
+                <div className="orah-screens">
+                    <img className="image" alt="Image" src={orah2} />
+
+                    <img className="img" alt="Image" src={orah3} />
+
+                        <img className="image-2" alt="Image" src={orah3} />
+
+                        <img className="image-3" alt="Image" src={orah3} />
+                </div>
+            </div>
+
+            <div className="frame-wrapper">
+                <div className="div-3">
+                    <div className="div-4">
+                        <div className="div-5">
+                            <div className="text-wrapper-3">SUMMARY</div>
+
+                            <p className="p">
+                                Creating an effective screentime managment app.
+                            </p>
+                        </div>
+
+                        <p className="according-to">
+                            <span className="span">According to </span>
+
+                            <a
+                                href="https://www2.deloitte.com/us/en/insights/industry/telecommunications/connectivity-mobile-trends-survey.html"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
+                                <span className="text-wrapper-4">
+                                    Deloitte’s 2023 Connected Consumer
+                                </span>
+                            </a>
+
+                            <span className="span">
+                                {" "}
+                                survey, 53% of young Americans struggle to limit their screen
+                                time to a comfortable level. As a team, our mission was to
+                                design a mobile app that gamifies screen time management by
+                                enabling users to earn redeemable points upon reaching their
+                                screen time goals.
+                                <br />
+                                <br />
+                            </span>
+                        </p>
+                    </div>
+
+                    <div className="div-6">
+                        <div className="div-7">
+                            <div className="text-wrapper-5">ROLE</div>
+
+                            <div className="text-wrapper-6">Lead Product Designer</div>
+                        </div>
+
+                        <div className="div-7">
+                            <div className="text-wrapper-5">TIMELINE</div>
+
+                            <p className="text-wrapper-6">April 2023 - March 2024</p>
+                        </div>
+
+                        <div className="div-7">
+                            <div className="text-wrapper-5">TEAM</div>
+
+                            <p className="element-business-analysts">
+                                3 Business Analysts
+                                <br />3 Developers
+                                <br />2 Product Designers
+                                <br />1 Product Manager
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </>
+    );
+}
+export default OrahPage; 
+
+
+edit this css to match the image sent:
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 121px;
+    padding: 69px 0px 0px;
+    position: relative;
+    width: 1299px;
+}
+
+.frame .div {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 80px;
+    position: relative;
+    width: 820.25px;
+}
+
+.frame .div-2 {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 11px;
+    justify-content: center;
+    position: relative;
+    width: 306px;
+}
+
+.frame .text-wrapper {
+    color: #31302e;
+    font-family: "Nico Moji-Regular", Helvetica;
+    font-size: 27px;
+    font-weight: 400;
+    letter-spacing: 2.16px;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.frame .text-wrapper-2 {
+    color: #000000;
+    font-family: "Heebo-Light", Helvetica;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+}
+
+.frame .orah-screens {
+    align-self: stretch;
+    height: 417.5px;
+    position: relative;
+    width: 100%;
+}
+
+.frame .image {
+    height: 327px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 157px;
+}
+
+.frame .img {
+    height: 327px;
+    left: 226px;
+    object-fit: cover;
+    position: absolute;
+    top: 101px;
+    width: 157px;
+}
+
+.frame .image-2 {
+    height: 327px;
+    left: 453px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 157px;
+}
+
+.frame .image-3 {
+    height: 327px;
+    left: 674px;
+    object-fit: cover;
+    position: absolute;
+    top: 101px;
+    width: 157px;
+}
+
+.frame .frame-wrapper {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 467px;
+    padding: 75px 172px;
+    position: relative;
+    width: 100%;
+}
+
+.frame .div-3 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 94px;
+    position: relative;
+}
+
+.frame .div-4 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    width: 608px;
+}
+
+.frame .div-5 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 28px;
+    position: relative;
+    width: 100%;
+}
+
+.frame .text-wrapper-3 {
+    color: #5c5c5f;
+    font-family: var(--h2-text-font-family);
+    font-size: var(--h2-text-font-size);
+    font-style: var(--h2-text-font-style);
+    font-weight: var(--h2-text-font-weight);
+    letter-spacing: var(--h2-text-letter-spacing);
+    line-height: var(--h2-text-line-height);
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+}
+
+.frame .p {
+    color: #5c5c5f;
+    font-family: var(--subtitle-font-family);
+    font-size: var(--subtitle-font-size);
+    font-style: var(--subtitle-font-style);
+    font-weight: var(--subtitle-font-weight);
+    letter-spacing: var(--subtitle-letter-spacing);
+    line-height: var(--subtitle-line-height);
+    position: relative;
+    width: 580px;
+}
+
+.frame .according-to {
+    color: #000000;
+    font-family: "Heebo-Regular", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 580px;
+}
+
+.frame .span {
+    color: #000000;
+    font-family: "Heebo-Regular", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.frame .text-wrapper-4 {
+    text-decoration: underline;
+}
+
+.frame .div-6 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    position: relative;
+    width: 236px;
+}
+
+.frame .div-7 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+
+.frame .text-wrapper-5 {
+    color: #767474;
+    font-family: "Heebo-Regular", Helvetica;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1.00px;
+    position: relative;
+    width: fit-content;
+}
+
+.frame .text-wrapper-6 {
+    color: #19191b;
+    font-family: "Heebo-Regular", Helvetica;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+}
+
+.frame .element-business-analysts {
+    color: #19191b;
+    font-family: "Heebo-Regular", Helvetica;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 236px;
+}
