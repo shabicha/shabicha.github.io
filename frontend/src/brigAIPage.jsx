@@ -44,7 +44,7 @@ function BrigAIPage() {
                             >
                                 7-10 year
                             </a> {" "}
-                            diagnostic delay, {" "}
+                            diagnostic delay. {" "}
                             <a
                                 href="https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome"
                                 rel="noopener noreferrer"
@@ -52,7 +52,7 @@ function BrigAIPage() {
                                 className="summary-link"
                             >
                                 70%
-                            </a> {" "} of women with PCOS remain undiagnosed, and {" "} 
+                            </a> {" "} of women with PCOS remain undiagnosed. {" "} 
                             <a
                                 href="https://www.miracare.com/blog/medical-gaslighting/#:~:text=In%20our%20research%2C%20we%20learned,ignored%20or%20dismissed%20by%20doctors"
                                 rel="noopener noreferrer"
