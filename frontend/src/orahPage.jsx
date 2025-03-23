@@ -35,19 +35,19 @@ function OrahPage() {
                     <div className="orah-summary">
                         <h2 className="summary-title">SUMMARY</h2>
                         <p className="summary-description">
-                            Creating an effective screentime management app.
+                            Creating an effective screentime management app
                         </p>
                         <p className="summary-text">
-                            According to{" "}
+                            
                             <a
                                 href="https://www2.deloitte.com/us/en/insights/industry/telecommunications/connectivity-mobile-trends-survey.html"
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="summary-link"
                             >
-                                Deloitte’s 2023 Connected Consumer
+                                53%
                             </a>{" "}
-                            survey, 53% of young Americans struggle to limit their screen
+                             of young Americans struggle to limit their screen
                             time to a comfortable level.
                         </p>
                         <p className="summary-text">

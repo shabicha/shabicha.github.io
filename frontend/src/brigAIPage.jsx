@@ -37,7 +37,7 @@ function BrigAIPage() {
                         <p className="summary-text">
                             Women with endometriosis face a {" "}
                             <a
-                                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6454760/"
+                                href="https://www.york.ac.uk/news-and-events/news/2024/research/diagnosis-endometriosis-delay/#:~:text=Endometriosis%20takes%20an%20average%20of%206.6%20years%20to%20be%20diagnosed,policy%20makers%2C%20the%20researchers%20say"
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="summary-link"
@@ -46,7 +46,7 @@ function BrigAIPage() {
                             </a> {" "}
                             diagnostic delay, {" "}
                             <a
-                                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6356663/"
+                                href="https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome"
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="summary-link"
@@ -54,7 +54,7 @@ function BrigAIPage() {
                                 70%
                             </a> {" "} of women with PCOS remain undiagnosed, and {" "} 
                             <a
-                                href="https://www.today.com/health/womens-health/medical-gaslighting-rcna38108"
+                                href="https://www.miracare.com/blog/medical-gaslighting/#:~:text=In%20our%20research%2C%20we%20learned,ignored%20or%20dismissed%20by%20doctors"
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="summary-link"
