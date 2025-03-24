@@ -61,7 +61,7 @@ function OrahPage() {
                     <div className="orah-details">
                         <div className="orah-detail">
                             <h3 className="detail-title">ROLE</h3>
-                            <p className="detail-text">Lead Product Designer</p>
+                            <p className="detail-text">Software Developer & Lead Product Designer</p>
                         </div>
                         <div className="orah-detail">
                             <h3 className="detail-title">TIMELINE</h3>

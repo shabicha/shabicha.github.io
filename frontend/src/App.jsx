@@ -50,7 +50,7 @@ function App() {
           image1={orah3}
           image2={orah2}
           title="orah"
-          role="Lead Product Designer"
+          role="Software Developer & Lead Product Designer"
           description="Gamifying screen-time reduction."
           projectId="orah"
         />
