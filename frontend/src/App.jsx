@@ -34,7 +34,8 @@ function App() {
               <div className="text-wrapper-2">sa-/bee/-sha</div>
             </div>
             <p className="product-designer">
-              Software engineer with a love for product design. Elevating the digital world with efficient systems and radial gradients.
+              <p>Software engineer with a love for product design.</p>
+              <p>Elevating the digital world with efficient systems and radial gradients.</p>
             </p>
           </div>
           <div className="div-4" onClick={scrollToCardsSection} style={{ cursor: 'pointer' }}>
