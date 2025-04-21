@@ -11,17 +11,21 @@ import orah2 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/sr
 import brig1 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/brig1.png";
 import brig2 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/brig2.png";
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 
 function App() {
+  const navigate = useNavigate();
+
   useEffect(() => {
     const redirect = sessionStorage.redirect;
-    delete sessionStorage.redirect;
-    if (redirect && redirect !== window.location.pathname) {
-      window.history.replaceState(null, null, redirect);
+    if (redirect) {
+      sessionStorage.removeItem('redirect');
+      navigate(redirect, { replace: true });
     }
-  }, []);
+  }, [navigate]);
+
   // Step 1: Create the ref for the cards section
   const cardsSectionRef = useRef(null);
 
@@ -31,6 +35,7 @@ function App() {
   };
   return (
   <>
+  
       < NavBar scrollToCardsSection={scrollToCardsSection} />
 
       {/* Hero section */}
