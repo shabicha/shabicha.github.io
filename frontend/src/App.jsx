@@ -10,9 +10,18 @@ import orah3 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/sr
 import orah2 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orah2.png";
 import brig1 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/brig1.png";
 import brig2 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/brig2.png";
+import { useEffect } from 'react';
+
 
 
 function App() {
+  useEffect(() => {
+    const redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect !== window.location.pathname) {
+      window.history.replaceState(null, null, redirect);
+    }
+  }, []);
   // Step 1: Create the ref for the cards section
   const cardsSectionRef = useRef(null);
 
