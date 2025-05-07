@@ -20,14 +20,21 @@ function OrahPage() {
                     <p className="orah-subtitle">Gamifying screen-time reduction</p>
                 </div>
 
-                {/* Screenshots Section */}
+                {/* Screenshots Section flex flex-wrap justify-center gap-x-6 gap-y-8 */}
                 <div className="orah-screens">
-                    <div className="orah-images-wrapper">
+                    <div className="orah-image-wrapper translate-y-0 md:translate-y-0">
                     <img className="orah-image" alt="Orah screen 1" src={orah2} />
+                    </div>
+                    <div className="orah-image-wrapper translate-y-4 md:translate-y-[101px]">
                     <img className="orah-image" alt="Orah screen 2" src={orah3} />
+                    </div>
+                    <div className="orah-image-wrapper translate-y-0 md:translate-y-0">
                     <img className="orah-image" alt="Orah screen 3" src={orah4} />
+                    </div>
+                    <div className="orah-image-wrapper translate-y-4 md:translate-y-[101px]">
                     <img className="orah-image" alt="Orah screen 3" src={orah5} />
                     </div>
+                    
                 </div>
 
                 {/* Summary Section */}

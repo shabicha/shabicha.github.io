@@ -21,10 +21,10 @@ function BrigAIPage() {
 
 
                 {/* Screenshots Section */}
-                <div className="brig-screens">
+                <div className="flex flex-wrap justify-center items-center gap-6 w-full min-h-[50vh] relative grow md:gap-[78px] w-full px-4 py-8">
                    
-                        <img className="brigimg1" alt="Orah screen 2" src={brig1} />
-                        <img className="brigimg2" alt="Orah screen 3" src={brig2} />
+                    <img className="w-[80vw] h-auto md:w-[480px] md:h-80 block" alt="Orah screen 2" src={brig1} />
+                    <img className="w-[80vw] h-auto md:w-[480px] md:h-80 block" alt="Orah screen 3" src={brig2} />
                 </div>
 
                 {/* Summary Section */}

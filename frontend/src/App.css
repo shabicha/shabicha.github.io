@@ -1,148 +1,93 @@
+
+@import "tailwindcss";
 @font-face {
-    font-family: 'Nico Moji';
-    src: url('/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/NicoMoji-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-                }
-@font-face {
-    font-family: 'Heebo';
-    src: url('/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/Heebo-Regular.ttf') format('truetype');
+    font-family: "Nico Moji";
+    src: url("/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/NicoMoji-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Heebo";
+    src: url("/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/Heebo-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .frame {
-    align-items: flex-start;
-    display: inline-flex;
-    gap: 34px;
-    position: relative;
-    left: 374.8px;
-    top: 309.7px;
+    @apply flex items-start justify-start gap-[34px] min-h-screen pl-52 pt-52;
+}
+
+/* Stack vertically on small screens */
+@media (max-width: 768px) {
+    .frame {
+        @apply flex-col text-center pl-40 pt-40;
+    }
 }
 
 .frame .image {
-    height: 215px;
-    position: relative;
-    width: 212px;
+    @apply h-[215px] w-[212px];
 }
 
 .frame .div {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    position: relative;
-    width: 364px;
+    @apply items-start flex flex-col gap-6 relative w-[364px];
 }
 
 .frame .div-2 {
-    align-items: flex-start;
-    align-self: stretch;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 12px;
-    justify-content: flex-end;
-    position: relative;
-    width: 100%;
+    @apply items-start self-stretch flex flex-[0_0_auto] flex-col gap-3 justify-end relative w-full;
 }
 
 .frame .div-3 {
-    align-items: flex-start;
-    display: inline-flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 11px;
-    position: relative;
+    @apply items-start inline-flex flex-[0_0_auto] flex-col gap-[11px] relative;
 }
 
 .frame .text-wrapper {
-    color: #31302e;
+    @apply text-[#31302e] text-[32px] font-normal tracking-[2.96px] leading-[normal] relative whitespace-nowrap w-fit -mt-px;
     font-family: "Nico Moji", Helvetica;
-    font-size: 32px;
-    font-weight: 400;
-    letter-spacing: 2.96px;
-    line-height: normal;
-    margin-top: -1px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
 }
 
 .frame .text-wrapper-2 {
-    color: #767575;
+    @apply text-[#767575] text-[15px] font-normal tracking-[1.35px] leading-[normal] relative w-fit;
     font-family: "Heebo", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 1.35px;
-    line-height: normal;
-    position: relative;
-    width: fit-content;
 }
 
 .frame .product-designer {
-    color: #31302e;
+    @apply text-[#31302e] text-[15px] font-normal tracking-[0] leading-[1.6] max-w-[500px] w-full text-left;
     font-family: "Heebo", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 20px;
-    position: relative;
-    width: 500px;
 }
 
 .frame .div-4 {
-    align-items: center;
-    outline: 1px solid;
-    outline-color: #e6e7e9;
-    border-radius: 36px;
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 25px;
-    padding: 12px 32px;
-    position: relative;
-    
-       
+    @apply items-center outline-[#e6e7e9] inline-flex flex-[0_0_auto] gap-[25px] relative px-8 py-3 rounded-[36px];
+    outline: 1px solid #e6e7e9;
 }
+
 .frame .div-4:hover {
-    outline: 2px solid #31302E;
+    outline: 2px solid #31302e;
     /* Changes outline color and thickness on hover */
 }
 
 .frame .text-wrapper-3 {
-    color: #31302e;
+    @apply text-[#31302e] text-[12.5px] font-normal tracking-[0.48px] leading-[normal] relative w-fit -mt-px;
     font-family: "Heebo", sans-serif;
-    font-size: 12.5px;
-    font-weight: 400;
-    letter-spacing: 0.48px;
-    line-height: normal;
-    margin-top: -1px;
-    position: relative;
-    width: fit-content;
-    
 }
 
 .frame .vector {
-    height: 14px;
-    margin-right: -1px;
-    position: relative;
-    width: 13px;
+    @apply h-3.5 relative w-[13px] -mr-px;
 }
-
-
-
-
 
 /* Hero section */
 
 /* Cards section */
 .spacer {
-    height: 100vh;
+    @apply h-screen;
     /* Adjust the height as needed */
 }
-.cards-section {
-    display: flex;
-    justify-content: center;
-    gap: 94px;
-    padding: 4rem 0;
-}
 
+.cards-section {
+    @apply flex justify-center gap-[94px] px-0 py-16;
+}
+@media (max-width: 768px) {
+    .cards-section {
+        @apply flex-col px-4 py-8;
+    }
+}

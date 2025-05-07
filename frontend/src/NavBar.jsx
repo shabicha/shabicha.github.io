@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import './NavBar.css'
-import Logo from '/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/shabLogo.svg'
+import Logo from '/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/public/shabLogo.svg'
 
 const NavBar = ({ scrollToCardsSection }) => {
   return (
@@ -14,7 +14,7 @@ const NavBar = ({ scrollToCardsSection }) => {
                   onClick={(e) => {
                       e.preventDefault(); // Prevents page reload
                       scrollToCardsSection(); // Calls the scroll function from App.jsx
-                  }} style={{ cursor: 'pointer' }} className='text-wrapper-3'>CASE STUDIES</a>
+                  }} style={{ cursor: 'pointer' }} className='text-wrapper-3'>PROJECTS</a>
               <a href="https://rose-ginnie-96.tiiny.site" target="_blank" rel="noopener noreferrer" className='text-wrapper-3'>RESUME</a>
           </div>
       </nav>
