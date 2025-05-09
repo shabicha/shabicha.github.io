@@ -1,7 +1,6 @@
 
 import { useRef } from 'react';
 import Arrow from '/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/parrow.svg'
-import Elevation from '/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/pheader.svg'
 import './App.css'
 import NavBar from "./NavBar";
 import Card from './CardMobileView';
@@ -12,8 +11,7 @@ import brig1 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/sr
 import brig2 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/brig2.png";
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-
+import P5Effect from './p5Effect';
 
 function App() {
   const navigate = useNavigate();
@@ -41,7 +39,9 @@ function App() {
       {/* Hero section */}
       
       <div className="frame">
-        <img className="image" alt="Image" src={Elevation} />
+       
+        <P5Effect />
+
         <div className="div">
           <div className="div-2">
 
@@ -52,7 +52,7 @@ function App() {
 
             <p className="product-designer">
               <p>Software engineer & product designer.</p>
-              <p>Finding ways to elevate the digital world :)</p>
+              <p>Building solutions from 0 → 100</p>
             </p>
           </div>
           
@@ -62,7 +62,6 @@ function App() {
           </div>
       </div>
       </div>
-      <div className="spacer"></div>
       {/* Navigation Links */}
       <div className="cards-section" ref={cardsSectionRef} >
         <Card

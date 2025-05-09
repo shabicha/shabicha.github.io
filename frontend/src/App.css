@@ -25,8 +25,8 @@
     }
 }
 
-.frame .image {
-    @apply h-[215px] w-[212px];
+.image {
+    @apply h-[188px] w-[192px];
 }
 
 .frame .div {
