@@ -16,8 +16,7 @@
     background-color: #eeeeee;
     border: 1px solid;
     border-color: #e6e8e9;
-    border-radius: 16px;
-    height: 499px;
+    height: 604px;
     position: relative;
     width: 456px;
 }
@@ -81,7 +80,7 @@
     width: 456px;
 }
 
- .div {
+ .textgroup {
     align-items: flex-start;
     display: flex;
     flex: 0 0 auto;
@@ -89,6 +88,8 @@
     gap: 12px;
     position: relative;
     width: 456px;
+    padding-top: 504px;
+    padding-left: 43px;
 }
 
  .div-2 {
@@ -134,4 +135,55 @@
     letter-spacing: 0;
     line-height: normal;
     position: relative;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    height: 66px;
+    position: relative;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    display: flex;
+     
+    align-items: center;
+}
+
+.project-title {
+    font-family: "Istok Web", Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 400;
+    color: #31302e;
+    letter-spacing: 1.92px;
+}
+
+.project-subtitle {
+    font-family: "Heebo", Helvetica, sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: #31302e;
+    margin: 0;
+    width: 230px;
+    
+}
+
+.project-tags {
+    display: flex;
+    gap: 7px;
+}
+
+.tag {
+    border: 1px solid #31302e;
+    padding: 2px 7px;
+    font-family: "Heebo", Helvetica, sans-serif;
+    font-size: 13.5px;
+    color: #31302e;
+    letter-spacing: 1.22px;
 }

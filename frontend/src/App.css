@@ -57,7 +57,7 @@
 }
 
 .frame .div-4 {
-    @apply items-center outline-[#e6e7e9] inline-flex flex-[0_0_auto] gap-[25px] relative px-8 py-3 rounded-[36px];
+    @apply items-center outline-[#e6e7e9] inline-flex flex-[0_0_auto] gap-[25px] relative px-8 py-3;
     outline: 1px solid #e6e7e9;
 }
 

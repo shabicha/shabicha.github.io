@@ -69,7 +69,7 @@ function App() {
           image2={orah2}
           title="orah"
           role="Software Developer & Lead Product Designer"
-          description="Gamifying screen-time reduction."
+          description="— Gamifying screen-time reduction."
           projectId="orah"
         />
         <Card2
@@ -77,7 +77,7 @@ function App() {
           image2={brig2}
           title="brig.ai"
           role="Machine Learning Engineer & Product Manager"
-          description="Designing AI to protect women's health rights."
+          description="— AI tools for reproductive healthcare."
           projectId="brigAI"
         />
       </div>

@@ -3,7 +3,7 @@ import './Card.css';
 import { Link } from 'react-router-dom';
 
 
-function Card({ image1, image2, title, role, description, projectId }) {
+function Card({ image1, image2, title, description, projectId }) {
     return (
         <>
             <Link to={`/${projectId}`} style={{ textDecoration: 'none', color: 'inherit' }}>
@@ -11,15 +11,23 @@ function Card({ image1, image2, title, role, description, projectId }) {
                     <div className="group">
                         <img className="imageLaptop" alt="Image" src={image1} />
                         <img className="imgLaptop" alt="Image" src={image2} />
-                    </div>
-                    <div className="div">
+                    
+                        <div className="textgroup">
                         <div className="div-2">
-                            <div className="text-wrapper">{title}</div>
-                            <div className="text-wrapper-2">{role}</div>
+                                <div className="project-card">
+                                    <div className="project-header">
+                                        <div className="project-title">{title}</div>
+                                        <p className="project-subtitle">{description}</p>
+                                    </div>
+                                    <div className="project-tags">
+                                        <span className="tag">Machine Learning</span>
+                                        <span className="tag">Product Strategy</span>
+                                    </div>
+                                </div>
+
                         </div>
-                        <p className="p">
-                            {description}
-                        </p>
+                       
+                        </div>
                     </div>
                 </div>
 
