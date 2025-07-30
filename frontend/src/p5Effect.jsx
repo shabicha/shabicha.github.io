@@ -8,7 +8,7 @@ function sketch(p5) {
         { 
         
         
-        p5.createCanvas(192, 188); 
+        p5.createCanvas(127, 140); 
         p5.noStroke();
 
         };

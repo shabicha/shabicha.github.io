@@ -3,7 +3,7 @@ import './Card.css';
 import { Link } from 'react-router-dom';
 
 
-function Card({ image1, image2, title, role, description, projectId }) {
+function Card({ image1, image2, title, description, projectId }) {
     return (
         <>
             <Link to={`/${projectId}`} style={{ textDecoration: 'none', color: 'inherit' }}>

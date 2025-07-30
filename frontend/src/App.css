@@ -5,24 +5,32 @@
     src: url("/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/NicoMoji-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
+    
 }
 
 @font-face {
     font-family: "Heebo";
-    src: url("/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/Heebo-Regular.ttf") format("truetype");
+    src: url("/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/IstokWeb-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
+    letter-spacing: 20%;
+    
 }
 
 .frame {
-    @apply flex items-start justify-start gap-[34px] min-h-screen pl-52 pt-52;
+    @apply flex items-start justify-start gap-[34px] pl-26 pt-52;
 }
 
 /* Stack vertically on small screens */
 @media (max-width: 768px) {
     .frame {
-        @apply flex-col text-center pl-40 pt-40;
+        @apply flex-col;
     }
+    .tabpag {
+    @apply flex items-start justify-start;
+}
+
+     
 }
 
 .image {
@@ -38,21 +46,22 @@
 }
 
 .frame .div-3 {
-    @apply items-start inline-flex flex-[0_0_auto] flex-col gap-[11px] relative;
+    @apply items-start inline-flex flex-[0_0_auto] flex-col gap-[6px] relative;
 }
 
 .frame .text-wrapper {
-    @apply text-[#31302e] text-[32px] font-normal tracking-[2.96px] leading-[normal] relative whitespace-nowrap w-fit -mt-px;
+    @apply text-[#31302e] text-[29px] font-normal tracking-[0.2em] leading-[normal] relative whitespace-nowrap w-fit -mt-px;
     font-family: "Nico Moji", Helvetica;
 }
 
 .frame .text-wrapper-2 {
-    @apply text-[#767575] text-[15px] font-normal tracking-[1.35px] leading-[normal] relative w-fit;
-    font-family: "Heebo", sans-serif;
+    @apply text-[#767575] text-[12px] font-normal tracking-[0.5em] leading-[normal] relative w-fit;
+    font-family: "Heebo";
+    
 }
 
 .frame .product-designer {
-    @apply text-[#31302e] text-[15px] font-normal tracking-[0] leading-[1.6] max-w-[500px] w-full text-left;
+    @apply text-[#31302e] text-[13px] font-normal tracking-[0.07em] leading-[1.6] max-w-[500px] w-full text-left;
     font-family: "Heebo", sans-serif;
 }
 
@@ -84,10 +93,25 @@
 }
 
 .cards-section {
-    @apply flex justify-center gap-[94px] px-0 py-16;
+    @apply flex justify-start gap-[94px] pl-26 py-16;
 }
 @media (max-width: 768px) {
     .cards-section {
-        @apply flex-col px-4 py-8;
+        @apply flex-col;
     }
+}
+.tabpag {
+    @apply pl-26 pt-25;
+    
+}
+
+/* !!fix mobile spacing issue */
+
+.tabsframe {
+@apply flex flex-col justify-start items-start;
+
+}
+.tabpagstyle {
+@apply flex items-start justify-start gap-[34px] px-5 py-2 bg-[url('assets/noise.png')] bg-[length:300px_auto] bg-left-top bg-white;
+outline: 1px solid #EAECEE;
 }
