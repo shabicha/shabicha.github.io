@@ -7,7 +7,7 @@ function Card({ image1, image2, title, description, projectId }) {
     return (
         <>
             <Link to={`/${projectId}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                <div className='full-card-struc'>
+                <div className='full-card-struc cursor-none'>
                     <div className="group">
                         <img className="imageLaptop" alt="Image" src={image1} />
                         <img className="imgLaptop" alt="Image" src={image2} />

@@ -149,11 +149,31 @@ class="flex flex-col items-center justify-center bg-[#e9fd53] gap-[8.82px] w-[30
         }}
       >
         {!hoveredCard ? (
-          <div className="w-4 h-4 bg-black rounded-full opacity-80"></div>
+     <div className="flex items-start justify-start gap-[34px] h-[20px] w-[20px] outline-[1px] outline-[#eaecee] bg-[length:300px_auto] bg-left-top bg-white overflow-hidden"
+     style={{
+    background: 'rgba(255, 255, 255, 0.1)',
+     backdropFilter: 'blur(0.5px)',
+    border: '1px solid rgba(255, 255, 255, 0.2)',
+   
+  }}>
+  <img className="flex-shrink-0 w-full h-full opacity-50 object-cover" alt="Group" src={noise} />
+</div>
         ) : (
-          <div className="w-24 h-24 bg-black rounded-full opacity-90 flex items-center justify-center duration-300 ease-out">
-            <span className="text-white text-xs font-medium uppercase tracking-wide">
-              View Project
+
+
+
+
+          <div className=" relative flex items-center justify-center w-30 h-[33px] outline-[1px] outline-[#eaecee] bg-[length:300px_auto] bg-left-top bg-white overflow-hidden duration-300 ease-out"
+     style={{
+    background: 'rgba(255, 255, 255, 0.1)',
+     backdropFilter: 'blur(6px)',
+    border: '1px solid rgba(255, 255, 255, 0.2)',
+   
+  }}>
+      <img className=" absolute flex-shrink-0 w-full h-full opacity-50 object-cover" alt="Group" src={noise} />
+
+            <span className="relative font-['Heebo'] text-[#31302e] text-[12px] uppercase tracking-wide whitespace-nowrap">
+              View Project 
             </span>
           </div>
         )}
