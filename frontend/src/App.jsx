@@ -27,11 +27,12 @@ function App() {
 
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [hoveredCard, setHoveredCard] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategories, setSelectedCategories] = useState([]);
 
   const cardsData = [
   {
     type: 'Card',
+     categoryID: ['development', 'design'],
     props: {
       image1: orah3,
       image2: orah2,
@@ -45,6 +46,7 @@ function App() {
   },
   {
      type: 'Card',
+      categoryID: ['machine-learning', 'design'],
     props: {
       image1: orah3,
       image2: orah2,
@@ -58,13 +60,15 @@ function App() {
   },
     {
      type: 'Card',
+      categoryID: ['machine-learning', 'design', 'development'],
+
     props: {
       image1: orah3,
       image2: orah2,
       title: "SHOPLENS",
       year: "2025",
       card: shoplenscard,
-      tags: ["Python", "Data Cleaning", "VGG16", "CLIP"],
+      tags: ["Python", "Data Cleaning", "VGG16", "CLIP", "React.JS"],
       description: " Image-based search for e-commerce platforms.",
       projectId: "https://github.com/shabicha/shoplens"
     }
@@ -72,6 +76,8 @@ function App() {
 
     {
      type: 'Card',
+      categoryID: ['development', 'design'],
+
     props: {
       image1: orah3,
       image2: orah2,
@@ -86,18 +92,25 @@ function App() {
 
     {
      type: 'Card',
+     categoryID: ['machine-learning', 'design', 'development'],
+
     props: {
       image1: orah3,
       image2: orah2,
       title: "PROTECH",
       year: "2023",
       card: proteccard,
-      tags: ["Front-End Development", "SwiftUI"],
+      tags: ["Front-End Development", "SwiftUI", "Co-ML"],
       description: "Machine learning for campus safety.",
       projectId: "https://github.com/shabicha/ProTech"
     }
   }
 ];
+const filteredCards = selectedCategories.length === 0 
+  ? cardsData // all if no categories selected
+  : cardsData.filter(card => 
+      card.categoryID.some(category => selectedCategories.includes(category))
+    );
   useEffect(() => {
     const redirect = sessionStorage.redirect;
     if (redirect) {
@@ -166,7 +179,7 @@ function App() {
           </div>
 <div 
  onClick={() => window.open("https://github.com/shabicha", "_blank")}
-class="flex flex-col items-center justify-center bg-[#e9fd53] gap-[8.82px] w-[30px] h-[24px] p-[8.82px_6.17px] relative">
+class="flex flex-col items-center justify-center bg-[#e9fd53] gap-[8.82px] w-[30px] h-[24px] p-[8.82px_6.17px] relative hover:opacity-50 transition-opacity duration-300 ease-in-out">
               <img class="w-[15px] h-[15px] relative" alt="Vector" src={github} />
           </div>
             </div>
@@ -178,21 +191,38 @@ class="flex flex-col items-center justify-center bg-[#e9fd53] gap-[8.82px] w-[30
 <div className="tabpag">
   <div className="tabpagstyle">
     <div 
-      className={`text-[#31302e] text-[12px] font-normal font-['Heebo'] cursor-pointer ${selectedCategory === 'development' ? 'bg-[#e9fd53]' : ''}`}
-      onClick={() => setSelectedCategory(selectedCategory === 'development' ? null : 'development')}
+      className={`text-[#31302e] text-[12px] font-normal font-['Heebo'] cursor-pointer ${selectedCategories.includes('development')? 'bg-[#e9fd53]' : ''}`}
+     onClick={() => {
+        setSelectedCategories(prev => 
+          prev.includes('development') 
+            ? prev.filter(cat => cat !== 'development')
+            : [...prev, 'development']
+        );
+      }}
     >
       DEVELOPMENT
     </div>
     <div 
-      className={`text-[#31302e] text-[12px] font-normal font-['Heebo'] cursor-pointer ${selectedCategory === 'design' ? 'bg-[#e9fd53]' : ''}`}
-      onClick={() => setSelectedCategory(selectedCategory === 'design' ? null : 'design')}
+      className={`text-[#31302e] text-[12px] font-normal font-['Heebo'] cursor-pointer ${selectedCategories.includes('design') ? 'bg-[#e9fd53]' : ''}`}
+      onClick={() => {
+        setSelectedCategories(prev => 
+          prev.includes('design') 
+            ? prev.filter(cat => cat !== 'design')
+            : [...prev, 'design']
+        );
+      }}
     >
       DESIGN
     </div>
     <div 
-      className={`text-[#31302e] text-[12px] font-normal font-['Heebo'] cursor-pointer ${selectedCategory === 'machine-learning' ? 'bg-[#e9fd53]' : ''}`}
-      onClick={() => setSelectedCategory(selectedCategory === 'machine-learning' ? null : 'machine-learning')}
-    >
+      className={`text-[#31302e] text-[12px] font-normal font-['Heebo'] cursor-pointer ${selectedCategories.includes('machine-learning') ? 'bg-[#e9fd53]' : ''}`}
+onClick={() => {
+        setSelectedCategories(prev => 
+          prev.includes('machine-learning') 
+            ? prev.filter(cat => cat !== 'machine-learning')
+            : [...prev, 'machine-learning']
+        );
+      }}    >
       MACHINE LEARNING
     </div>
   </div>
@@ -200,7 +230,7 @@ class="flex flex-col items-center justify-center bg-[#e9fd53] gap-[8.82px] w-[30
 </div>
       {/* Navigation Links */}
       <div className="cards-section " ref={cardsSectionRef} >
-         {cardsData.map((card, index) => (
+     {filteredCards.map((card, index) => (
     <div 
       key={card.props.projectId}
       onMouseEnter={() => setHoveredCard(true)}
