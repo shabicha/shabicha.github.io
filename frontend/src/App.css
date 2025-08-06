@@ -93,7 +93,7 @@
 }
 
 .cards-section {
-    @apply flex justify-start gap-[94px] pl-26 py-16;
+    @apply flex flex-wrap justify-start gap-[94px] pl-26 py-16;
 }
 @media (max-width: 768px) {
     .cards-section {

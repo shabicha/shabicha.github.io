@@ -1,189 +1,90 @@
-@font-face {
-    font-family: 'Nico Moji';
-    src: url('/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/NicoMoji-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import "tailwindcss";
 
 @font-face {
-    font-family: 'Heebo';
-    src: url('/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/Heebo-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Nico Moji";
+  src: url("/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/NicoMoji-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-
+@font-face {
+  font-family: "Heebo";
+  src: url("/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/IstokWeb-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .group {
-    background-color: #eeeeee;
-    border: 1px solid;
-    border-color: #e6e8e9;
-    height: 604px;
-    position: relative;
-    width: 456px;
+  @apply bg-[#eeeeee] border h-[604px] relative w-[456px] border-solid border-[#e6e8e9] hover:bg-white;
 }
-.group:hover {
-    background-color: #ffffff;
-}
-
 .group .image {
-    height: 306px;
-    left: 62px;
-    object-fit: cover;
-    position: absolute;
-    top: 46px;
-    width: 146px;
+  @apply h-[306px] object-cover absolute w-[146px] left-[62px] top-[46px];
 }
-
 .group .img {
-    height: 308px;
-    left: 243px;
-    object-fit: cover;
-    position: absolute;
-    top: 144px;
-    width: 149px;
+  @apply h-[308px] object-cover absolute w-[149px] left-[243px] top-36;
 }
-
-
 .group .imageLaptop {
-    object-fit: cover;
-    position: absolute;
-    height: 176px;
-    left: 49px;
-    top: 65px;
-    width: 265px;
+  @apply object-cover absolute h-44 w-[265px] left-[49px] top-[65px];
 }
-
 .group .imgLaptop {
-    object-fit: cover;
-    position: absolute;
-    height: 176px;
-    left: 147px;
-    top: 269px;
-    width: 265px;
+  @apply object-cover absolute h-44 w-[265px] left-[147px] top-[269px];
 }
-
-
-
-.full-card-struc{
-    display: flex;
-        /* Add this line */
-        flex-direction: column;
-        /* Optional: stack items vertically */
-        gap: 26px;
+.full-card-struc {
+  @apply flex flex-col gap-[26px];
+  /* Add this line */
+  /* Optional: stack items vertically */
 }
-
-
-
- .image {
-    height: 499px;
-    object-fit: cover;
-    position: relative;
-    width: 456px;
+.image {
+  @apply h-[499px] object-cover relative w-[456px];
 }
-
- .textgroup {
-    align-items: flex-start;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 12px;
-    position: relative;
-    width: 456px;
-    padding-top: 504px;
-    padding-left: 43px;
+.textgroup {
+  @apply items-start flex flex-[0_0_auto] flex-col gap-3 relative w-[456px] pl-[43px] pt-[504px];
 }
-
- .div-2 {
-    align-items: flex-start;
-    align-self: stretch;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 7px;
-    position: relative;
-    width: 100%;
+.div-2 {
+  @apply items-start self-stretch flex flex-[0_0_auto] flex-col gap-[7px] relative w-full;
 }
-
- .text-wrapper {
-    align-self: stretch;
-    color: #31302e;
-    font-family: "Nico Moji", Helvetica;
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 1.92px;
-    line-height: normal;
-    margin-top: -1.00px;
-    position: relative;
+.text-wrapper {
+  @apply self-stretch text-[#31302e] text-2xl font-normal tracking-[1.92px] leading-[normal] mt-[-1.00px] relative;
+  font-family: "Nico Moji", Helvetica;
 }
-
- .text-wrapper-2 {
-    align-self: stretch;
-    color: #767575;
-    font-family: "Heebo", Helvetica;
-    font-size: 13.5px;
-    font-weight: 400;
-    letter-spacing: 1.22px;
-    line-height: normal;
-    position: relative;
+.text-wrapper-2 {
+  @apply self-stretch text-[#767575] text-[13.5px] font-normal tracking-[1.22px] leading-[normal] relative;
+  font-family: "Heebo", Helvetica;
 }
-
- .p {
-    align-self: stretch;
-    color: #31302e;
-    font-family: "Heebo", Helvetica;
-    font-size: 13.5px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: normal;
-    position: relative;
+.p {
+  @apply self-stretch text-[#31302e] text-[13.5px] font-normal tracking-[0] leading-[normal] relative;
+  font-family: "Heebo", Helvetica;
 }
-
 .project-card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 400px;
-    height: 66px;
-    position: relative;
+  @apply flex flex-col gap-2.5 w-[400px] h-[66px] relative;
 }
-
 .project-header {
-    display: flex;
-    flex-direction: row;
-    gap: 7px;
-    display: flex;
-     
-    align-items: center;
+  @apply flex flex-row gap-[7px] flex items-center;
 }
-
 .project-title {
-    font-family: "Istok Web", Helvetica, sans-serif;
-    font-style: italic;
-    font-size: 24px;
-    font-weight: 400;
-    color: #31302e;
-    letter-spacing: 1.92px;
+  @apply italic text-2xl font-normal text-[#31302e] tracking-[1.92px];
+  font-family: "Istok Web", Helvetica, sans-serif;
 }
-
 .project-subtitle {
-    font-family: "Heebo", Helvetica, sans-serif;
-    font-size: 13.5px;
-    font-weight: 400;
-    color: #31302e;
-    margin: 0;
-    width: 230px;
-    
+  @apply text-[13.5px] font-normal text-[#31302e] w-[230px] m-0;
+  font-family: "Heebo", Helvetica, sans-serif;
 }
-
 .project-tags {
-    display: flex;
-    gap: 7px;
+  @apply flex gap-[7px];
 }
 
 .tag {
-    border: 1px solid #31302e;
-    padding: 2px 7px;
-    font-family: "Heebo", Helvetica, sans-serif;
-    font-size: 13.5px;
-    color: #31302e;
-    letter-spacing: 1.22px;
+  @apply border text-[13.5px] text-[#31302e] tracking-[1.22px] px-[7px] py-0.5 border-solid border-[#31302e];
+  font-family: "Heebo", Helvetica, sans-serif;
 }
+
+.texttitle {
+  @apply text-[#31302e] text-[18px] font-thin tracking-[0] leading-[normal] mt-[-1.00px] relative w-fit;
+  font-family: "Heebo";
+}
+
+
+
+
+
+

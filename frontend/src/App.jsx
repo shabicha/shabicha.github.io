@@ -6,6 +6,12 @@ import NavBar from "./NavBar";
 import Card from './CardMobileView';
 import Card2 from './CardLaptopView';
 import orah3 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orah3.png";
+import orahcard from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orahcard.png";
+import brigcard from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/brigcard.png";
+import proteccard from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/proteccard.png";
+import shoplenscard from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/shoplenscard.png";
+import splitzcard from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/splitzcard.png";
+
 import orah2 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/orah2.png";
 import brig1 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/brig1.png";
 import brig2 from "/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/brig2.png";
@@ -21,7 +27,77 @@ function App() {
 
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [hoveredCard, setHoveredCard] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
+  const cardsData = [
+  {
+    type: 'Card',
+    props: {
+      image1: orah3,
+      image2: orah2,
+      title: "ORAH",
+      year: "2024",
+      card: orahcard,
+      tags: ["Product Design", "SwiftUI"],
+      description: "Gamifying screen-time reduction.",
+      projectId: "orah"
+    }
+  },
+  {
+     type: 'Card',
+    props: {
+      image1: orah3,
+      image2: orah2,
+      title: "BRIG.AI",
+      year: "2024",
+      card: brigcard,
+      tags: ["K-Means Clustering", "Linear Regression", "Product"],
+      description: "AI tools for reproductive healthcare.",
+      projectId: "brigAI"
+    }
+  },
+    {
+     type: 'Card',
+    props: {
+      image1: orah3,
+      image2: orah2,
+      title: "SHOPLENS",
+      year: "2025",
+      card: shoplenscard,
+      tags: ["Python", "Data Cleaning", "VGG16", "CLIP"],
+      description: " Image-based search for e-commerce platforms.",
+      projectId: "https://github.com/shabicha/shoplens"
+    }
+  },
+
+    {
+     type: 'Card',
+    props: {
+      image1: orah3,
+      image2: orah2,
+      title: "SPLITZ",
+      year: "2025",
+      card: splitzcard,
+      tags: ["iOS Development", "Swift"],
+      description: "Split the bill on iMessages.",
+      projectId: "https://github.com/shabicha/Split"
+    }
+  },
+
+    {
+     type: 'Card',
+    props: {
+      image1: orah3,
+      image2: orah2,
+      title: "PROTECH",
+      year: "2023",
+      card: proteccard,
+      tags: ["Front-End Development", "SwiftUI"],
+      description: "Machine learning for campus safety.",
+      projectId: "https://github.com/shabicha/ProTech"
+    }
+  }
+];
   useEffect(() => {
     const redirect = sessionStorage.redirect;
     if (redirect) {
@@ -99,45 +175,40 @@ class="flex flex-col items-center justify-center bg-[#e9fd53] gap-[8.82px] w-[30
    
       </div>
         {/* tab pagination */}
- <div className="tabpag"> 
-<div className="tabpagstyle">
-  <div className="text-[#31302e] bg-[#e9fd53] text-[12px] font-normal font-['Heebo']">
-    DEVELOPMENT
-  </div>
-  <div className="text-[#31302e] text-[12px] font-normal font-['Heebo']">
-    DESIGN
-  </div>
-  <div className="text-[#31302e] text-[12px] font-normal font-['Heebo']">
-    MACHINE LEARNING
+<div className="tabpag">
+  <div className="tabpagstyle">
+    <div 
+      className={`text-[#31302e] text-[12px] font-normal font-['Heebo'] cursor-pointer ${selectedCategory === 'development' ? 'bg-[#e9fd53]' : ''}`}
+      onClick={() => setSelectedCategory(selectedCategory === 'development' ? null : 'development')}
+    >
+      DEVELOPMENT
+    </div>
+    <div 
+      className={`text-[#31302e] text-[12px] font-normal font-['Heebo'] cursor-pointer ${selectedCategory === 'design' ? 'bg-[#e9fd53]' : ''}`}
+      onClick={() => setSelectedCategory(selectedCategory === 'design' ? null : 'design')}
+    >
+      DESIGN
+    </div>
+    <div 
+      className={`text-[#31302e] text-[12px] font-normal font-['Heebo'] cursor-pointer ${selectedCategory === 'machine-learning' ? 'bg-[#e9fd53]' : ''}`}
+      onClick={() => setSelectedCategory(selectedCategory === 'machine-learning' ? null : 'machine-learning')}
+    >
+      MACHINE LEARNING
+    </div>
   </div>
 </div>
-   
-   </div>
 </div>
       {/* Navigation Links */}
-      <div className="cards-section" ref={cardsSectionRef} >
-        <Card
-          image1={orah3}
-          image2={orah2}
-          title="orah"
-          role="Software Developer & Lead Product Designer"
-          description="— Gamifying screen-time reduction."
-          projectId="orah"
-        />
-        <div onMouseEnter={() => setHoveredCard(true)}
-            onMouseLeave={() => setHoveredCard(null)}>
-
-       
-        <Card2
-          image1={brig1}
-          image2={brig2}
-          title="brig.ai"
-          role="Machine Learning Engineer & Product Manager"
-          description="— AI tools for reproductive healthcare."
-          projectId="brigAI"
-          
-        />
-         </div>
+      <div className="cards-section " ref={cardsSectionRef} >
+         {cardsData.map((card, index) => (
+    <div 
+      key={card.props.projectId}
+      onMouseEnter={() => setHoveredCard(true)}
+      onMouseLeave={() => setHoveredCard(null)}
+    >
+      {card.type === 'Card' ? <Card {...card.props} /> : <Card2 {...card.props} />}
+    </div>
+  ))}
       </div>
        <div
         className="fixed pointer-events-none z-[9999]"
