@@ -29,7 +29,7 @@
     }
     
     .cards-section {
-        @apply flex-col pl-4 gap-6;
+        @apply flex-col pl-16 pr-4 gap-6;
     }
     
     .tabpagstyle {
@@ -47,7 +47,7 @@
 
 @media (max-width: 768px) {
     .frame .div {
-        @apply w-full max-w-full px-4;
+        @apply w-full max-w-full pl-0 px-4;
     }
 }
 
@@ -118,7 +118,7 @@
 
 @media (max-width: 768px) {
     .tabpag {
-        @apply pl-4 pt-8;
+        @apply pl-0 pt-8;
     }
 }
 
@@ -128,7 +128,7 @@
 
 @media (max-width: 768px) {
     .tabsframe {
-        @apply px-4;
+        @apply pl-4 gap-8;
     }
 }
 

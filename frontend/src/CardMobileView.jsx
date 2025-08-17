@@ -12,7 +12,7 @@ function Card({ image1, image2, title, year, card, tags,description, projectId }
      <div className="flex flex-col gap-[22px]  cursor-none">
 
           <img 
-  className="w-[529px] h-[598px] object-cover" 
+  className="card-image" 
   alt="Image" 
   src={card} 
 />
@@ -46,7 +46,7 @@ function Card({ image1, image2, title, year, card, tags,description, projectId }
             <div className="flex flex-col gap-[22px] cursor-none">
 
           <img 
-  className="w-[529px] h-[598px] object-cover" 
+  className="card-image" 
   alt="Image" 
   src={card} 
 />

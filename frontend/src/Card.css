@@ -83,7 +83,15 @@
   font-family: "Heebo";
 }
 
+.card-image {
+  @apply w-[529px] h-[598px] object-cover;
+}
 
+@media (max-width: 768px) {
+  .card-image {
+    @apply w-full h-auto max-w-full;
+  }
+}
 
 
 
