@@ -9,7 +9,7 @@ function Card({ image1, image2, title, year, card, tags,description, projectId }
 
         {projectId.startsWith('http') ? (
   <a href={projectId} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
-     <div className="flex flex-col gap-[22px]">
+     <div className="flex flex-col gap-[22px]  cursor-none">
 
           <img 
   className="w-[529px] h-[598px] object-cover" 
