@@ -1,11 +1,10 @@
-
 @import "tailwindcss";
+
 @font-face {
     font-family: "Nico Moji";
     src: url("/Users/shabichasureshkumar/Desktop/Portfolio Site/frontend/src/assets/NicoMoji-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-    
 }
 
 @font-face {
@@ -14,23 +13,28 @@
     font-weight: normal;
     font-style: normal;
     letter-spacing: 20%;
-    
 }
 
 .frame {
-    @apply flex items-start justify-start gap-[34px] pl-26 pt-52;
+    @apply flex items-start justify-start gap-[34px] pl-26 pt-52 w-full max-w-full;
 }
 
-/* Stack vertically on small screens */
 @media (max-width: 768px) {
     .frame {
-        @apply flex-col;
+        @apply flex-col pl-4 pt-20 gap-4;
     }
+    
     .tabpag {
-    @apply flex items-start justify-start;
-}
-
-     
+        @apply flex items-start justify-start pl-4;
+    }
+    
+    .cards-section {
+        @apply flex-col pl-4 gap-6;
+    }
+    
+    .tabpagstyle {
+        @apply gap-4;
+    }
 }
 
 .image {
@@ -39,6 +43,12 @@
 
 .frame .div {
     @apply items-start flex flex-col gap-6 relative w-[364px];
+}
+
+@media (max-width: 768px) {
+    .frame .div {
+        @apply w-full max-w-full px-4;
+    }
 }
 
 .frame .div-2 {
@@ -54,10 +64,15 @@
     font-family: "Nico Moji", Helvetica;
 }
 
+@media (max-width: 768px) {
+    .frame .text-wrapper {
+        @apply text-[24px];
+    }
+}
+
 .frame .text-wrapper-2 {
     @apply text-[#767575] text-[12px] font-normal tracking-[0.5em] leading-[normal] relative w-fit;
     font-family: "Heebo";
-    
 }
 
 .frame .product-designer {
@@ -72,7 +87,6 @@
 
 .frame .div-4:hover {
     outline: 2px solid #31302e;
-    /* Changes outline color and thickness on hover */
 }
 
 .frame .text-wrapper-3 {
@@ -84,35 +98,47 @@
     @apply h-3.5 relative w-[13px] -mr-px;
 }
 
-/* Hero section */
-
-/* Cards section */
 .spacer {
     @apply h-screen;
-    /* Adjust the height as needed */
 }
 
 .cards-section {
-    @apply flex flex-wrap justify-start gap-[94px] pl-26 py-16;
+    @apply flex flex-wrap justify-start gap-[94px] pl-26 py-16 w-full max-w-full overflow-x-hidden;
 }
+
 @media (max-width: 768px) {
     .cards-section {
-        @apply flex-col;
+        @apply flex-col pl-4 py-8 gap-6;
     }
 }
+
 .tabpag {
     @apply pl-26 pt-25;
-    
 }
 
-/* !!fix mobile spacing issue */
+@media (max-width: 768px) {
+    .tabpag {
+        @apply pl-4 pt-8;
+    }
+}
 
 .tabsframe {
-@apply flex flex-col justify-start items-start;
-
+    @apply flex flex-col justify-start items-start;
 }
+
+@media (max-width: 768px) {
+    .tabsframe {
+        @apply px-4;
+    }
+}
+
 .tabpagstyle {
-@apply flex items-start justify-start gap-[34px] px-5 py-2 bg-[url('assets/noise.png')] bg-[length:300px_auto] bg-left-top bg-white;
-outline: 1px solid #EAECEE;
+    @apply flex items-start justify-start gap-[34px] px-5 py-2 bg-[url('assets/noise.png')] bg-[length:300px_auto] bg-left-top bg-white;
+    outline: 1px solid #EAECEE;
 }
 
+@media (max-width: 768px) {
+    .tabpagstyle {
+        @apply gap-3 px-3 py-2 flex-wrap;
+    }
+}
