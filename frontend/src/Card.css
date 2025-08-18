@@ -31,8 +31,7 @@
 }
 .full-card-struc {
   @apply flex flex-col gap-[26px];
-  /* Add this line */
-  /* Optional: stack items vertically */
+
 }
 .image {
   @apply h-[499px] object-cover relative w-[456px];

@@ -19,36 +19,12 @@
     @apply flex items-start justify-start gap-[34px] pl-26 pt-52 w-full max-w-full;
 }
 
-@media (max-width: 768px) {
-    .frame {
-        @apply flex-col pl-4 pt-20 gap-4;
-    }
-    
-    .tabpag {
-        @apply flex items-start justify-start pl-4;
-    }
-    
-    .cards-section {
-        @apply flex-col pl-16 pr-4 gap-6;
-    }
-    
-    .tabpagstyle {
-        @apply gap-4;
-    }
-}
-
 .image {
     @apply h-[188px] w-[192px];
 }
 
 .frame .div {
     @apply items-start flex flex-col gap-6 relative w-[364px];
-}
-
-@media (max-width: 768px) {
-    .frame .div {
-        @apply w-full max-w-full pl-0 px-4;
-    }
 }
 
 .frame .div-2 {
@@ -62,12 +38,6 @@
 .frame .text-wrapper {
     @apply text-[#31302e] text-[29px] font-normal tracking-[0.2em] leading-[normal] relative whitespace-nowrap w-fit -mt-px;
     font-family: "Nico Moji", Helvetica;
-}
-
-@media (max-width: 768px) {
-    .frame .text-wrapper {
-        @apply text-[24px];
-    }
 }
 
 .frame .text-wrapper-2 {
@@ -106,30 +76,12 @@
     @apply flex flex-wrap justify-start gap-[94px] pl-26 py-16 w-full max-w-full overflow-x-hidden;
 }
 
-@media (max-width: 768px) {
-    .cards-section {
-        @apply flex-col pl-4 py-8 gap-6;
-    }
-}
-
 .tabpag {
     @apply pl-26 pt-25;
 }
 
-@media (max-width: 768px) {
-    .tabpag {
-        @apply pl-0 pt-8;
-    }
-}
-
 .tabsframe {
     @apply flex flex-col justify-start items-start;
-}
-
-@media (max-width: 768px) {
-    .tabsframe {
-        @apply pl-4 gap-8;
-    }
 }
 
 .tabpagstyle {
@@ -137,8 +89,29 @@
     outline: 1px solid #EAECEE;
 }
 
+/* Single consolidated mobile media query */
 @media (max-width: 768px) {
+    .frame {
+        @apply flex-col pl-4 pt-40 gap-[34px];
+    }
+    
+    .frame .div {
+        @apply w-full max-w-full;
+    }
+    
+    .cards-section {
+        @apply flex flex-col px-8 py-8 gap-6;
+    }
+    
+    .tabpag {
+        @apply pl-4 pt-8;
+    }
+    
+    .tabsframe {
+        @apply pl-4 gap-8;
+    }
+    
     .tabpagstyle {
-        @apply gap-3 px-3 py-2 flex-wrap;
+        @apply gap-8 px-3 py-2 flex-wrap;
     }
 }
